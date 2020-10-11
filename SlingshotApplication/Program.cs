@@ -108,6 +108,11 @@ namespace SlingshotApplication
 
         private static void PrintPath(IList<Node> path)
         {
+            if(path.Count == 0)
+            {
+                Console.WriteLine("No connection between those two nodes!");
+            }
+
             foreach(var node in path)
             {
                 Console.WriteLine("******************************");
